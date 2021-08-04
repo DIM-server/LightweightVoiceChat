@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>gold.dim</groupId>
-	<artifactId>springbootdemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>springbootdemo</name>
+	<artifactId>LightweightVoiceChat</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+	<name>LightweightVoiceChat</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
