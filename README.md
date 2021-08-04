@@ -2,7 +2,7 @@
 
 **本项目名称为:**`LightweightVoiceChat`
   - `项目LOGO`
-  - ![](Transmit Experiment/LightweightVoiceChat---LOGO.png)
+  - ![LightweightVoiceChat---LOGO](Transmit Experiment/LightweightVoiceChat---LOGO.png)
   - `LightweightVoiceChat`是我们项目团队在2021/7/27制作的开源项目,项目的构思是在群语音的时候发现了一些缺点,才开发此项目.
   - 实现在语音聊天中群员可以调节任何群员的`输出音量`以及自己的`输入音量`
   - 管理员拥有最高权限,可以开关群员的`麦克风`,也可以调节群员的`输入音量` ...暂定是这些功能
