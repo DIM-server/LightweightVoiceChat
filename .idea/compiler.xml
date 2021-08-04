@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootdemo" />
+        <module name="LightweightVoiceChat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springbootdemo" target="1.8" />
+      <module name="LightweightVoiceChat" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springbootdemo" options="-parameters" />
+      <module name="LightweightVoiceChat" options="-parameters" />
     </option>
   </component>
 </project>

@@ -7,6 +7,12 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+#maven Compiled folder
+/target
+
+#idea Project configuration
+/.idea
+
 # Package Files #
 *.jar
 *.war

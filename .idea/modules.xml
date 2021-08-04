@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LightweightVoiceChat.iml" filepath="$PROJECT_DIR$/LightweightVoiceChat.iml" />
     </modules>
   </component>
 </project>

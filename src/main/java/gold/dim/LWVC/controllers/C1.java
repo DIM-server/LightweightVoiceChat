@@ -1,4 +1,4 @@
-package gold.dim.springbootdemo.controllers;
+package gold.dim.LWVC.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

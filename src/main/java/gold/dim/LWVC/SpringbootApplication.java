@@ -1,13 +1,12 @@
-package gold.dim.springbootdemo;
+package gold.dim.LWVC;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootdemoApplication {
-
+public class SpringbootApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootdemoApplication.class, args);
+		SpringApplication.run(SpringbootApplication.class, args);
 	}
 
 }

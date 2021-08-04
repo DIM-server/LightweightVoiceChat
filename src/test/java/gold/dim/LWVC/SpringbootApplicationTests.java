@@ -1,10 +1,10 @@
-package gold.dim.springbootdemo;
+package gold.dim.LWVC;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootdemoApplicationTests {
+class SpringbootApplicationTests {
 
 	@Test
 	void contextLoads() {
