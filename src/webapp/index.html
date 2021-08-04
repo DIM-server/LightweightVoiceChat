@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DIM生电服务器</title>
+    <link rel="shortcut_icon" href="https://render.namemc.com/skin/2d/face.png?skin=7091bd611ae31618&amp;overlay&amp;scale=2"> <!-- ID:BYCBZ -->
+    <link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=9653f7ac0a86882d&amp;overlay&amp;scale=2"> <!-- ID:Dong_Yi_feng -->
+    <link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=c9d3423b22ff1b6d&amp;overlay&amp;scale=2"> <!-- ID:mc_xinxin -->
+    <link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=f6a047f8269c2e12&amp;overlay&amp;scale=2"> <!-- ID:linseng520 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <script src="./lib/stats.js"></script>
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./lib/gl-matrix.js"></script>
+    <script src="./js/Header.js"></script>
+    <script src="./js/Render.js"></script>
+    <script src="./js/Tick.js"></script>
+    <script src="./js/Shader.js"></script>
+</head>
+<body>
+    <div class="background"><canvas id="bgCanvas"></canvas></div>
+    <div class="content">
+        <h2>D I M</h2>
+        <h1>S E R V E R</h1>
+    </div>
+    <div>
+        <a href="#">首页</a>
+    </div>
+</body>
+<script>
+    const M = glMatrix;
+    const canvas = document.getElementById("bgCanvas");
+    const render = new Render(canvas);
+    let tick;
+
+    function main(){
+
+        // 上传贴图
+        render.updateTex();
+
+        // 开启主循环
+        tick = new Tick(function(t){
+
+            // 清除缓冲器
+            render.clean();
+
+            // 渲染器更新
+            render.update(t);
+
+            // 绘制
+            render.drawAllHeader();
+        });
+
+        // 开启性能监视
+        // tick.useStats();
+    }
+
+    // 自适应
+    window.onresize = function(){
+        render.resize();
+    }
+
+    // 开启事件监听
+    canvas.onmousemove = function (e) {
+        render.mouseMove(e.offsetX, e.offsetY);
+    }
+
+    /**
+     * 渲染器启动方法
+     * @param headerUrl
+     */
+    function start(headerUrl){
+
+        // 添加头颅;
+        render.addHeader(headerUrl);
+
+        // 加载贴图
+        render.loadHeader().then(main);
+    }
+
+    // 获取玩家列表
+    $.ajax({
+        url: "./api/players.json"
+    }).then((e)=>{
+        start(e.map((v)=>"./tex/" + v + "/"));
+    });
+
+</script>
+</html>
