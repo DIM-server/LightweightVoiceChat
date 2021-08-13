@@ -11,9 +11,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>modules-common</artifactId>
+    <artifactId>LWVC-common</artifactId>
     <packaging>jar</packaging>
-    <name>modules-common</name>
+    <name>LWVC-common</name>
     <description>Common resource layer</description>
 
     <properties>
@@ -21,7 +21,6 @@
     </properties>
 
     <dependencies>
-
     </dependencies>
 
     <build>

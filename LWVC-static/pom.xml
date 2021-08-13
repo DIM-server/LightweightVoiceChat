@@ -11,8 +11,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>modules-static</artifactId>
-    <name>modules-static</name>
+    <artifactId>LWVC-static</artifactId>
+    <name>LWVC-static</name>
     <packaging>war</packaging>
     <description>Static resource layer</description>
 
