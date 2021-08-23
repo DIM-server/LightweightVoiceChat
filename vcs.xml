@@ -6,6 +6,10 @@
           <option name="url" value="https://github.com/DIM-server/LightweightVoiceChat.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/LTCatt/PCL2Help.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Dong_Yi_feng\Desktop" />
