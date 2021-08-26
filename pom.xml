@@ -12,43 +12,36 @@
 	<artifactId>LightweightVoiceChat</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>LightweightVoiceChat</name>
-	<description>Demo project for Spring Boot</description>
+	<description>LightweightVoiceChat</description>
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+	<!--	此配置为模块化配置-->
+	<modules>
+<!--		应用模块-->
+		<module>LWVC-apply</module>
+<!--		公共工具类-->
+		<module>LWVC-common</module>
+<!--		静态资源-->
+		<module>LWVC-static</module>
+	</modules>
+	<dependencies>
 	</dependencies>
+
+<!--	这里并不需要构建 使用apply模块进行构建 所以这里使用maven构建-->
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
