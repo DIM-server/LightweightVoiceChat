@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.2.RELEASE</version>
+		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>gold.dim</groupId>
@@ -14,50 +14,20 @@
 	<name>LightweightVoiceChat</name>
 	<description>LightweightVoiceChat</description>
 	<packaging>pom</packaging>
-
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-<!--	此配置为模块化配置-->
+
+	<!--	此配置为模块化配置-->
 	<modules>
 <!--		应用模块-->
-		<module>modules-apply</module>
+		<module>LWVC-apply</module>
 <!--		公共工具类-->
-		<module>modules-common</module>
+		<module>LWVC-common</module>
 <!--		静态资源-->
-		<module>modules-static</module>
+		<module>LWVC-static</module>
 	</modules>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 	</dependencies>
 
 <!--	这里并不需要构建 使用apply模块进行构建 所以这里使用maven构建-->
